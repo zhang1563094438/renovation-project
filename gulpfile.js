@@ -19,8 +19,6 @@ const del = require('del')
     // 8. 导入 gulp-webserver
 const webserver = require('gulp-webserver')
 
-
-
 // 当任务创建完成以后，就可以在命令行去执行了
 // 打开命令行，切换目录到你的 gulpfile.js 所在的目录
 // 执行指令 $ gulp 任务名称
@@ -80,11 +78,18 @@ const imgHandler = () => {
             .src('./src/images/*.**')
             .pipe(gulp.dest('./dist/images/'))
     }
+    // 打包 php 文件
+const phpHandler = () => {
+        // 找到文件
+        return gulp
+            .src('./src/php/*.**')
+            .pipe(gulp.dest('./dist/php/'))
+    }
     // 6. 转存 assets 文件
 const assetsHandler = () => {
         return gulp
-            .src('./src/assets/*/**')
-            .pipe(gulp.dest('./dist/assets'))
+            .src('./src/assets/*')
+            .pipe(gulp.dest('./dist/assets/'))
     }
     // 7. 删除 dist 文件
 const delHandler = () => {
@@ -95,13 +100,13 @@ const webHandler = () => {
         return gulp
             .src('./dist/')
             .pipe(webserver({ // 开启服务器
-                host: 'www.daobao.com',
+                host: 'www.zsb.com',
                 port: 8080,
-                open: './pages/a.html', // 默认打开哪一个文件夹，从 dist 目录开始向后写
+                open: './pages/index.html', // 默认打开哪一个文件夹，从 dist 目录开始向后写
                 livereload: true, // 自动刷新
                 proxies: [{
                         source: '/zhang',
-                        target: 'http://localhost:80/test.php'
+                        target: 'http://localhost:80/server/'
                     }
                     // {
                     //     source: '/zhang1',
@@ -124,7 +129,7 @@ const watchHandler = () => {
 // last 配置一个 默认任务
 const defaultHandler = gulp.series(
     delHandler,
-    gulp.parallel(sassHandler, cssHandler, jsHandler, htmlHandler, imgHandler, assetsHandler),
+    gulp.parallel(sassHandler, cssHandler, jsHandler, htmlHandler, imgHandler, assetsHandler, phpHandler),
     webHandler,
     watchHandler
 )
@@ -137,6 +142,7 @@ module.exports.cssHandler = cssHandler
 module.exports.jsHandler = jsHandler
 module.exports.htmlHandler = htmlHandler
 module.exports.imgHandler = imgHandler
+module.exports.phpHandler = phpHandler
 module.exports.assetsHandler = assetsHandler
 module.exports.delHandler = delHandler
     // 为什么一定要起名叫做 default

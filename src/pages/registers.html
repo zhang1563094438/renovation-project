@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../sass/public.css">
+    <link rel="stylesheet" href="../sass/registers.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="nav">
+        <ul class="top public">
+            <li><a>您好，欢迎来到顾家商城！</a></li>
+            <li><a href="./list.html">订购商城</a></li>
+            <li><a href="./index.html">官方网站</a></li>
+            <li class="off"><a href="./login.html">登录</a><span>|</span><a href="./revise.html">注册</a></li>
+            <li class="on hide "></li>
+            <li><a href="./cart.html">购物车</a><span>|</span><a href="#">我的订单</a></li>
+            <li><img src="../images/logo.png" alt=""></li>
+        </ul>
+    </div>
+    <!-- 注册框 -->
+    <div id="registerbox">
+        <form class="newform" id="register" method="get" action="">
+            <div class="head">用户注册</div>
+            <div class="group">
+                <label for="username">用户名：</label>
+                <input id="username" placeholder="请填写用户名" type="text" name="username" autocomplete="off">
+            </div>
+            <div class="group">
+                <label for="password">密码：</label>
+                <input id="password" placeholder="请填写密码" type="text" name="password" autocomplete="off">
+            </div>
+            <div class="group">
+                <label for="repeat">重复密码：</label>
+                <input id="repeat" placeholder="请重复填写密码" type="text" name="repeat" autocomplete="off">
+            </div>
+            <div class="group">
+                <label for="nickname">昵称：</label>
+                <input id="nickname" placeholder="请设置你的昵称" type="text" name="nickname" autocomplete="off">
+            </div>
+
+            <button>注册</button>
+        </form>
+    </div>
+    <script src="../assets/jquery.min.js"></script>
+    <script src="../assets/jquery.validate.min.js"></script>
+    <script src="../assets/messages_zh.min.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/registers.js"></script>
+</body>
+
+</html>

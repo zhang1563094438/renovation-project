@@ -1,0 +1,400 @@
+.public {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#nav {
+  width: 100%;
+  height: 44px;
+  background-color: #1b1b1b;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+#nav .top {
+  line-height: 42px;
+  text-align: right;
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav .top li a {
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+#nav .top li a:hover {
+  text-decoration: none;
+  color: #d83b3b;
+}
+#nav .top li span {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 8px;
+}
+#nav .top li img {
+  width: 40px;
+}
+#nav .top .on {
+  font-size: 16px;
+  color: skyblue;
+}
+
+#source {
+  padding-top: 40px;
+}
+#source .source {
+  height: 100px;
+}
+#source .source img {
+  float: left;
+  margin-top: 20px;
+  height: 80px;
+  width: 80px;
+}
+#source .source .kuang {
+  float: right;
+  display: flex;
+  margin-top: 30px;
+}
+#source .source .kuang input {
+  padding-left: 20px;
+  height: 40px;
+  width: 340px;
+  box-sizing: border-box;
+  border: 2px solid #E60013;
+}
+#source .source .kuang .but > button {
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 138px;
+  background-color: #E60013;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#source .source .kuang .but > button:hover {
+  background-color: rgba(230, 0, 19, 0.7);
+}
+#source .source p {
+  color: #a7a7a7;
+  float: right;
+  margin-top: 75px;
+  margin-right: -200px;
+}
+#source .source p a {
+  color: #a7a7a7;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#source .source p a:hover {
+  text-decoration: none;
+  color: #E60013;
+}
+#source ul {
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 46px;
+  text-align: center;
+  margin-top: 20px;
+}
+#source ul li:nth-child(1) {
+  width: 230px;
+}
+#source ul li:nth-of-type(1):hover {
+  background-color: black;
+  color: white;
+  border-bottom: none;
+}
+#source ul li:nth-of-type(1):hover .child {
+  color: #323232;
+  display: block;
+}
+#source ul li {
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s linear;
+}
+#source ul li a {
+  color: #000;
+}
+#source ul li a:hover {
+  text-decoration: none;
+}
+#source ul li:hover {
+  border-bottom: 5px solid orange;
+}
+#source ul .child {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  display: none;
+}
+#source ul .child .child-main {
+  border-bottom: 1px solid #aaaaaa;
+  padding: 9px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#source ul .child .child-main dt {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 130px 0 7px;
+  line-height: 30px;
+}
+#source ul .child .child-main dd {
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0 7px;
+}
+
+.swiper-container {
+  width: 1200px;
+  height: 320px;
+  position: relative;
+}
+.swiper-container img {
+  width: 1200px;
+  height: 320px;
+}
+
+#product {
+  margin-top: 60px;
+}
+#product h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #e62727;
+  font-weight: 600;
+}
+#product .productbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #969696;
+  padding: 5px;
+}
+#product .productbox .left img {
+  height: 350px;
+  width: 450px;
+}
+#product .productbox .center {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+#product .productbox .center img {
+  height: 160px;
+}
+#product .productbox .center img:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+#product .productbox .right img {
+  height: 350px;
+  width: 270px;
+}
+
+#show .showbox {
+  margin-top: 60px;
+  overflow: hidden;
+}
+#show .showbox h2 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+#show .showbox div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#show .showbox div a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+#show .showbox div a dl {
+  text-align: center;
+}
+#show .showbox div a dl dt {
+  border: 1px solid #d1d1d1;
+}
+#show .showbox div a dl dt img {
+  width: 320px;
+  transition: all 0.5s linear;
+}
+#show .showbox div a dl dt img:hover {
+  transform: scale(0.9);
+}
+#show .showbox div a dl dd {
+  margin-top: 5px;
+}
+#show .showbox div a dl dd:nth-of-type(2) {
+  color: #d83b3b;
+  font-weight: 200;
+}
+
+#designer {
+  background-color: gray;
+  overflow: hidden;
+}
+#designer h3 {
+  text-align: center;
+  margin: 30px 0;
+}
+#designer .loserbox {
+  display: flex;
+  justify-content: space-between;
+}
+#designer .loserbox a {
+  cursor: pointer;
+}
+#designer .loserbox a div {
+  position: relative;
+  z-index: 1;
+}
+#designer .loserbox a div img {
+  width: 240px;
+}
+#designer .loserbox a div span {
+  overflow: hidden;
+  text-align: center;
+  color: #cfcfcf;
+  display: block;
+  width: 240px;
+  height: 100px;
+  background-color: rgba(19, 19, 19, 0);
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  transition: 0.5s;
+}
+#designer .loserbox a div span p {
+  display: none;
+  font-size: 14px;
+  margin: 10px 0;
+}
+#designer .loserbox a div:hover span {
+  background-color: rgba(19, 19, 19, 0.7);
+}
+#designer .loserbox a div:hover p {
+  display: block;
+}
+
+.foot {
+  height: 328px;
+  background-color: #323232;
+  margin-top: 21px;
+  border-bottom: 1px solid #4c4b4b;
+}
+
+.foot .foot-center {
+  height: 328px;
+}
+
+.foot .foot-center img {
+  width: 180px;
+  height: 180px;
+  float: left;
+  margin-top: 70px;
+}
+
+.foot .foot-center dl {
+  float: left;
+  margin-top: 76px;
+  margin-left: 100px;
+}
+
+.foot .foot-center dl dt {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.foot .foot-center dl dt a {
+  color: #d5d5d5;
+}
+
+.foot .foot-center dl dd {
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.foot .foot-center dl dd a {
+  color: #d5d5d5;
+}
+
+.foot .foot-center dl + dl {
+  margin-left: 80px;
+}
+
+.foot .foot-center dl + dl + dl {
+  margin-left: 80px;
+}
+
+.foot .foot-center .last {
+  margin-left: 110px;
+}
+
+.foot .foot-center .last dt {
+  margin-bottom: 35px;
+}
+
+.foot .foot-center .last dd {
+  padding-left: 40px;
+  background: url(../images/icon3.png) no-repeat left center;
+  margin-bottom: 17px;
+}
+
+.foot .foot-center .last dd + dd {
+  background: url(../images/icon4.png) no-repeat left center;
+  margin-bottom: 19px;
+}
+
+.foot .foot-center .last dd + dd + dd {
+  background: url(../images/icon5.png) no-repeat left center;
+  margin-bottom: 17px;
+}
+
+.foot .foot-center p a {
+  color: #d5d5d5;
+}
+
+.foot .foot-center p span {
+  width: 38px;
+  height: 22px;
+  color: white;
+  background-color: #ff7043;
+}
+
+.foot-box {
+  background-color: #323232;
+}
+
+.foot-box .footer {
+  height: 47px;
+}
+
+.foot-box .footer p {
+  color: #d5d5d5;
+  margin-left: 68px;
+  line-height: 47px;
+  font-size: 12px;
+}
+
+.foot-box .footer p a {
+  color: #d5d5d5;
+}
+
+.foot > .foot-center > dl > dt a:hover {
+  color: #E60013;
+  text-decoration: none;
+}
+
+.foot > .foot-center > dl > dd a:hover {
+  color: #E60013;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

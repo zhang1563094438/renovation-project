@@ -1,0 +1,100 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: url(../images/logo-bg2.jpg) no-repeat center center;
+}
+
+#nav {
+  width: 100%;
+  height: 44px;
+  background-color: #1b1b1b;
+  position: fixed;
+  z-index: 999;
+}
+#nav .top {
+  line-height: 42px;
+  text-align: right;
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav .top li {
+  font-size: 16px;
+}
+#nav .top li img {
+  height: 40px;
+  width: 40px;
+  margin-top: 2px;
+}
+#nav .top .hide {
+  display: none;
+}
+#nav .top a {
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+#nav .top a:hover {
+  color: #d83b3b;
+}
+#nav .top span {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 8px;
+}
+
+#registerbox {
+  margin-top: 200px;
+  display: flex;
+  margin: auto;
+}
+#registerbox .newform {
+  width: 100%;
+  border: 2px solid #3d3d3d;
+  background-color: #fff;
+  border-radius: 10px;
+}
+#registerbox .newform .head {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 1px solid #6d6d6d;
+}
+#registerbox .newform .group {
+  padding: 5px 200px;
+  display: flex;
+  align-content: space-between;
+}
+#registerbox .newform .group label {
+  line-height: 30px;
+  width: 100px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+#registerbox .newform .group label.error {
+  color: red;
+  font-size: 10px;
+}
+#registerbox .newform .group input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+#registerbox .newform button {
+  font-size: 18px;
+  width: 410px;
+  height: 30px;
+  margin: 5px 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#registerbox .newform button:hover {
+  color: #fff;
+  background-color: #222222;
+}
+
+/*# sourceMappingURL=register.css.map */

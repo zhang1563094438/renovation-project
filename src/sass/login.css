@@ -1,0 +1,103 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: url(../images/logo-bg.jpg) no-repeat 40px;
+}
+
+.info {
+  margin: auto;
+}
+
+.info .login,
+.info .register {
+  display: inline;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+label.error {
+  color: red;
+}
+
+.login_error {
+  color: red;
+}
+
+#nav {
+  width: 100%;
+  height: 44px;
+  background-color: #1b1b1b;
+  position: fixed;
+  z-index: 999;
+}
+#nav .top {
+  line-height: 42px;
+  text-align: right;
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav .top li {
+  font-size: 16px;
+}
+#nav .top li img {
+  height: 40px;
+  width: 40px;
+  margin-top: 2px;
+}
+#nav .top .hide {
+  display: none;
+}
+#nav .top a {
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+#nav .top a:hover {
+  color: #d83b3b;
+}
+#nav .top span {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 8px;
+}
+
+.info > .panel-success {
+  border: 2px solid black;
+}
+
+.info > .panel > .panel-body > .col-sm-11 > .btn-success {
+  color: #333;
+  background-color: #e0e0e0;
+  border: #e0e0e0;
+}
+
+.info > .panel > .panel-body > .col-sm-11 > .btn-success:hover {
+  color: #ffffff;
+  background-color: black;
+}
+
+.info > .panel > .panel-body > .col-sm-11 > .btn-warning {
+  color: #333;
+  background-color: #e0e0e0;
+  border: #e0e0e0;
+}
+
+.info > .panel > .panel-body > .col-sm-11 > .btn-warning:hover {
+  color: #ffffff;
+  background-color: black;
+}
+
+.info > .panel-success > .panel-heading {
+  color: #1b1b1b;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: 2px solid #7a7a7a;
+}
+
+/*# sourceMappingURL=login.css.map */

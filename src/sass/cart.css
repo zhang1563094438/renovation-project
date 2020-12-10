@@ -1,0 +1,312 @@
+.public {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#nav {
+  width: 100%;
+  height: 44px;
+  background-color: #1b1b1b;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+#nav .top {
+  line-height: 42px;
+  text-align: right;
+  display: flex;
+  justify-content: space-evenly;
+}
+#nav .top li img {
+  height: 40px;
+  width: 40px;
+  margin-top: 2px;
+}
+#nav .top li a {
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+#nav .top li a:hover {
+  text-decoration: none;
+  color: #d83b3b;
+}
+#nav .top li span {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 8px;
+}
+#nav .top .oa {
+  font-size: 16px;
+  color: skyblue;
+}
+
+.content {
+  margin-top: 60px;
+}
+.content .panel-heading {
+  background-color: black;
+}
+.content .selectAll {
+  font-size: 16px;
+  position: relative;
+  color: white;
+}
+.content .selectAll .input {
+  width: 20px;
+  height: 20px;
+}
+.content .selectAll .text {
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 700;
+  color: white;
+}
+.content .goodsList li {
+  height: 100px;
+  padding: 10px 0;
+  display: flex;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
+.content .goodsList li .select {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .goodsList li .goodsImg {
+  width: 100px;
+  margin-right: 20px;
+}
+.content .goodsList li .goodsDesc {
+  width: 300px;
+  padding: 10px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.content .goodsList li .goodsDesc p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.content .goodsList li .price,
+.content .goodsList li .xiaoji {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.content .goodsList li .count {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .goodsList li .count button {
+  width: 30px;
+  height: 30px;
+}
+.content .goodsList li .count input {
+  width: 75px;
+  height: 33px;
+  text-align: center;
+  border: none;
+}
+.content .goodsList li .operate {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .goodsList li:last-child {
+  margin-bottom: 0;
+}
+.content .panel-footer {
+  background-color: black;
+}
+
+.buyInfo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.buyInfo .buyNum,
+.buyInfo .buyMoney,
+.buyInfo .operate {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.buyInfo .buyNum a,
+.buyInfo .buyMoney a,
+.buyInfo .operate a {
+  color: #FFF;
+}
+.buyInfo .buyNum span,
+.buyInfo .buyMoney span,
+.buyInfo .operate span {
+  font-size: 30px;
+  color: skyblue;
+}
+
+#show .showbox {
+  margin-top: 60px;
+  overflow: hidden;
+}
+#show .showbox h2 {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+#show .showbox div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#show .showbox div a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+#show .showbox div a dl {
+  text-align: center;
+}
+#show .showbox div a dl dt {
+  border: 1px solid #d1d1d1;
+}
+#show .showbox div a dl dt img {
+  width: 320px;
+  transition: all 0.5s linear;
+}
+#show .showbox div a dl dt img:hover {
+  transform: scale(0.9);
+}
+#show .showbox div a dl dd {
+  margin-top: 5px;
+}
+#show .showbox div a dl dd:nth-of-type(2) {
+  color: #d83b3b;
+  font-weight: 200;
+}
+
+.foot {
+  height: 328px;
+  background-color: #323232;
+  border-bottom: 1px solid #4c4b4b;
+}
+
+.foot .foot-center {
+  height: 328px;
+}
+
+.foot .foot-center img {
+  width: 180px;
+  height: 180px;
+  float: left;
+  margin-top: 70px;
+}
+
+.foot .foot-center dl {
+  float: left;
+  margin-top: 76px;
+  margin-left: 100px;
+}
+
+.foot .foot-center dl dt {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.foot .foot-center dl dt a {
+  color: #d5d5d5;
+}
+
+.foot .foot-center dl dd {
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.foot .foot-center dl dd a {
+  color: #d5d5d5;
+}
+
+.foot .foot-center dl + dl {
+  margin-left: 80px;
+}
+
+.foot .foot-center dl + dl + dl {
+  margin-left: 80px;
+}
+
+.foot .foot-center .last {
+  margin-left: 110px;
+}
+
+.foot .foot-center .last dt {
+  margin-bottom: 35px;
+}
+
+.foot .foot-center .last dd {
+  padding-left: 40px;
+  background: url(../images/icon3.png) no-repeat left center;
+  margin-bottom: 17px;
+}
+
+.foot .foot-center .last dd + dd {
+  background: url(../images/icon4.png) no-repeat left center;
+  margin-bottom: 19px;
+}
+
+.foot .foot-center .last dd + dd + dd {
+  background: url(../images/icon5.png) no-repeat left center;
+  margin-bottom: 17px;
+}
+
+.foot .foot-center p a {
+  color: #d5d5d5;
+}
+
+.foot .foot-center p span {
+  width: 38px;
+  height: 22px;
+  color: white;
+  background-color: #ff7043;
+}
+
+.foot-box {
+  background-color: #323232;
+}
+
+.foot-box .footer {
+  height: 47px;
+}
+
+.foot-box .footer p {
+  color: #d5d5d5;
+  margin-left: 68px;
+  line-height: 47px;
+  font-size: 12px;
+}
+
+.foot-box .footer p a {
+  color: #d5d5d5;
+}
+
+.foot > .foot-center > dl > dt a:hover {
+  color: #E60013;
+  text-decoration: none;
+}
+
+.foot > .foot-center > dl > dd a:hover {
+  color: #E60013;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=cart.css.map */
